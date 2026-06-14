@@ -6,9 +6,11 @@ function Home() {
   const [clientes, setClientes] = useState(() => {
     const clientesSalvos = localStorage.getItem("clientes");
 
+    
+
     return clientesSalvos
-      ? JSON.parse(clientesSalvos)
-      : [];
+    ? JSON.parse(clientesSalvos)
+    : [];
   });
 
   const [busca, setBusca] = useState("");
@@ -22,25 +24,35 @@ function Home() {
 
   return (
     <div className="container">
-      <h1>CRM DE CLIENTES   </h1>
+
+
+    <div className="header">
+      <h1>CRM de Clientes</h1>
+      <span>Gerenciamento de Clientes</span>
+    </div>
+
 
       <ClienteForm
         clientes={clientes}
         setClientes={setClientes}
       />
 
-      <input
-        type="text"
-        placeholder="Buscar cliente..."
-        value={busca}
-        onChange={(e) => setBusca(e.target.value)}
-      />
+     <input
+  type="text"
+  placeholder="Buscar cliente..."
+  value={busca}
+  onChange={(e) => setBusca(e.target.value)}
+/>
 
-      <ClienteList
-        clientes={clientes}
-        setClientes={setClientes}
-        busca={busca}
-      />
+<p className="contador">
+  Total de clientes: {clientes.length}
+</p>
+
+<ClienteList
+  clientes={clientes}
+  setClientes={setClientes}
+  busca={busca}
+/>
     </div>
   );
 }

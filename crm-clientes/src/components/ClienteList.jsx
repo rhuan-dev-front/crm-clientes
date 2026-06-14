@@ -27,9 +27,9 @@ function ClienteList({ clientes, setClientes, busca }) {
 
       {clientesFiltrados.map((cliente) => (
         <div key={cliente.id} className="cliente-card">
-          <p>Nome: {cliente.nome}</p>
-          <p>Email: {cliente.email}</p>
-          <p>Telefone: {cliente.telefone}</p>
+          <h3>{cliente.nome}</h3>
+          <p>📧 {cliente.email}</p>
+          <p>📱 {cliente.telefone}</p>
 
           <button onClick={() => excluirCliente(cliente.id)}>
             Excluir
