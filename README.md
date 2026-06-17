@@ -2,14 +2,14 @@
 
 Sistema de gerenciamento de clientes desenvolvido com React, permitindo cadastrar, editar, visualizar e excluir informações de clientes de forma simples e organizada.
 
-## 🚀 Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 * React
 * JavaScript
 * CSS3
 * Local Storage
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
 * Cadastro de clientes
 * Edição de informações
@@ -18,26 +18,23 @@ Sistema de gerenciamento de clientes desenvolvido com React, permitindo cadastra
 * Armazenamento local dos dados
 * Interface responsiva
 
-## 📸 Screenshots
 
-Adicione aqui imagens do sistema em funcionamento.
-
-## 🎯 Objetivo do Projeto
+##  Objetivo do Projeto
 
 Este projeto foi desenvolvido para praticar conceitos de React, componentes reutilizáveis, gerenciamento de estado, manipulação de formulários e armazenamento de dados no navegador.
 
-## 🛠 Como Executar
+##  Como Executar
 
 ```bash
 npm install
 npm start
 ```
 
-## 🔗 Deploy
+##  Deploy
 
 Em breve disponível no Vercel.
 
-## 👨‍💻 Desenvolvedor
+##  Desenvolvedor
 
 Rhuan Henrique
 
